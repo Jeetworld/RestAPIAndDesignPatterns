@@ -30,6 +30,7 @@ public class AddPlaceTestCase {
 				//.config(config.logConfig(LogConfig.logConfig().blacklistHeader("Content-Type")))
 				.config(RestAssured.config.logConfig(LogConfig.logConfig().blacklistHeader("Content-Type")))
 				.queryParam("key", "qaclick123")
+				
 				.log()
 				.all()
 				.body(addPlace.fitDataToPOJO());
